@@ -1,0 +1,806 @@
+/*------------------------------*/
+body .whats-new_desc figure {
+  margin: 40px auto 0;
+  width: 530px;
+}
+.disclaimer p {
+  font: 400 14px/20px Raleway;
+}
+/*------------------------------*/
+.header2020 {
+  padding: 20px 0;
+  /* background: url(../../images/b1.png)no-repeat top center;
+  background-size: cover; */
+}
+.header2020 .container {
+  text-align: -webkit-center;
+}
+.header2020 .img1 {
+  width: 410px;
+}
+.header2020 .img2 {
+  margin-top: 15px;
+  width: 36%;
+}
+@media (max-width: 1199px) {
+  .header2020 .img1,
+  .header2020 .img2 {
+    width: 37%;
+  }
+}
+@media (max-width: 991px) {
+  .header2020 .img1,
+  .header2020 .img2 {
+    width: 47%;
+  }
+}
+@media (max-width: 500px) {
+  .header2020 .img1,
+  .header2020 .img2 {
+    width: 63%;
+  }
+}
+/*------------------------------*/
+.orderBtn .linkText {
+  color: #337ab7;
+  font-size: 21px;
+  font-weight: 700;
+  text-decoration: underline;
+}
+.orderBtn .linkText:hover {
+  text-decoration: none;
+}
+.orderBtn .text {
+  color: #9d0000;
+  font-weight: bold;
+  font-size: 24px;
+  font-family: Tahoma, serif;
+  line-height: normal;
+}
+.orderBtn .upPart {
+  margin-bottom: 10px;
+}
+.orderBtn .text2 {
+  margin-top: 5px;
+}
+.upPart.upPart1 {
+  /* display: none; */
+}
+.upPart.upPart1 .text2 {
+   color: #000;
+   font: 16px Arial, Helvetica, sans-serif;
+}
+.orderBtn .imgContainer {
+  margin-bottom: 5px;
+}
+@media (max-width: 767px) {
+  /* .orderBtn .text, */
+  #member-a .orderBtn .text {
+    font-size: 19px;
+  }
+}
+@media (max-width: 543px) {
+  /* .orderBtn .text, */
+  #member-a .orderBtn .text {
+    font-size: 17px;
+  }
+  .orderBtn .linkText {
+    font-size: 18px;
+  }
+}
+@media (max-width: 400px) {
+  #member-a .orderBtn .text {
+    font-size: 15px;
+  }
+  .orderBtn .text {
+    font-size: 18px;
+  }
+  .orderBtn .linkText {
+    font-size: 14px;
+  }
+}
+/*------------------------------*/
+.remaining {
+  display: none;
+}
+.remaining.remaining2,
+.remaining.remaining3,
+.remaining.remaining4,
+.remaining.remaining5 {
+  display: block;
+}
+/*------------------------------*/
+body .anchor_info {
+  bottom: -29px;
+  margin: 0 0 0 -27px;
+  width: auto;
+  height: auto;
+}
+body .circle_block > ul > li {
+  margin-bottom: 0!important;
+}
+body .whats-new_desc .inner {
+  margin-top: 0;
+}
+/*------------------------------*/
+#footer ul li a:hover {
+  font-size: 14px;
+}
+@media (max-width: 500px) {
+  body #footer ul li a:hover,
+  body #footer ul li a {
+    font-size: 11px;
+  }
+}
+@media (max-width: 400px) {
+  body #footer ul li a:hover,
+  body #footer ul li a {
+    font-size: 10px;
+  }
+}
+@media (max-width: 370px) {
+  body #footer ul li a:hover,
+  body #footer ul li a {
+    font-size: 9px;
+  }
+}
+@media (max-width: 420px) {
+  body #footer ul li:nth-child(3) {
+    border-right: 1px solid #ffffff;
+  }
+}
+@media (max-width: 450px) {
+  body #footer ul li {
+    padding: 0 6px;
+  }
+}
+/*------------------------------*/
+.ass .remaining {
+  width: 300px;
+}
+.ass .remaining .act .rightbox {
+  border: 1px solid #E48401;
+  cursor: pointer;
+  outline: none;
+  font-family: Impact, 'Oswald', sans-serif;
+  font-size: xx-large;
+  background: linear-gradient(to bottom, #f9df4a 0%,#ff8f07 45%,#ff920a 100%);
+  color: #141414;
+  padding-right: 20px;
+  padding-left: 15px;
+}
+.ass .remaining .act .rightbox:hover {
+  background: linear-gradient(to bottom, #ff920a 0%,#ff8f07 55%,#f9df4a 100%);
+}
+body .remaining .rightbox2 {
+  margin-left: 0;
+  text-align: center;
+}
+.ass .orderBtn .linkText {
+  font-size: 16px;
+}
+/*---------- UPSELL BLOCK 1 START--------------------*/
+@media (min-width: 992px) {
+  .hideUp992 {
+    display: none !important;
+  }
+}
+@media (max-width: 991px) {
+  .hideDn992 {
+    display: none !important;
+  }
+}
+.blockHeader .mainContainer {
+  justify-content: center;
+  display: flex;
+}
+.blockHeader .col {
+  padding: 0;
+  /* width: 390px;
+  width: 640px; */
+}
+.blockHeader .leftCol {
+  text-align: left;
+  margin-left: 40px;
+  width: 571px;
+}
+.blockHeader .separator {
+  width: 40px;
+}
+.blockHeader .rightCol {
+  display: flex;
+  align-items: center;
+  width: 485px;
+  padding-bottom: 50px;
+}
+#myBody .blockHeader .leftCol p {
+  font-size: 18px;
+  line-height: normal;
+  margin-bottom: 15px;
+  text-align: center;
+}
+.blockHeader b {
+  font-size: 19px;
+}
+.blockHeader .attenContainer {
+  text-align: center;
+  margin-bottom: 50px;
+  margin-top: -40px;
+}
+#myBody .blockHeader .attenContainer p {
+  width: max-content;
+  border: 2px dashed;
+  margin: auto;
+  padding: 5px 10px;
+  font-size: 16px;
+  /* color: #fdd500; */
+}
+.blockHeader h1 {
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 16px;
+  line-height: 38px;
+  /* line-height: normal; */
+  /* font-size: 37px; */
+  margin-top: 0;
+  font-weight: 700;
+  /* font-family: Arial;*/
+}
+.blockHeader .logoContainer img {
+  margin: -50px auto 15px auto;
+  max-width: 300px;
+}
+.marginAuto {
+  margin: auto;
+  float: none;
+}
+.blockHeader .yellow {
+  color: #fdd500;
+}
+header.blockHeader {
+  background: url(../../images/b1.png)no-repeat top center;
+  background-size: cover;
+}
+.blockHeader .lastfinal {
+  font-weight: bold;
+  font-size: 24px;
+  font-family: Tahoma, serif;
+  text-align: center;
+  color: #ff0000;
+  margin-bottom: 0;
+  display: block;
+}
+.blockHeader .rightCol img,
+.blockHeader .hideDn992 img {
+  max-width: 100%;
+}
+.blockHeader .hideUp992 .text {
+  color: #ff0000;
+}
+
+@media (max-width: 1199px) {
+  .blockHeader .leftCol {
+    margin-left: 0;
+  }
+  .blockHeader .separator {
+    width: 0;
+  }
+  .blockHeader .rightCol {
+    width: 450px;
+  }
+  .blockHeader h1 {
+    font-size: 26px;
+    font-weight: 800;
+  }
+  .blockHeader .lastfinal {
+    font-size: 23px;
+  }
+}
+@media (max-width: 991px) {
+  .blockHeader .mainContainer {
+    flex-direction: column;
+  }
+  .blockHeader .col {
+    padding: 0 15px;
+    width: 100%;
+  }
+  .blockHeader .leftCol {
+    margin: 0 0 20px 0;
+  }
+  .blockHeader .rightCol {
+    max-width: 500px;
+    margin: 0 0 20px 0;
+  }
+  .blockHeader .attenContainer {
+    margin-bottom: 30px;
+    margin-top: 0;
+  }
+  #myBody .blockHeader .attenContainer p {
+    width: auto;
+  }
+  .blockHeader .attenContainer br {
+    display: none;
+  }
+  .blockHeader h1 {
+    font-size: 31px;
+  }
+}
+@media (max-width: 570px) {
+  .blockHeader h1 {
+    font-size: 25px;
+    line-height: normal;
+  }
+}
+/*********************************************/
+#no-thanks a {
+  font-size: 12px;
+  color: #828282;
+  /* text-decoration: underline; */
+}
+/*---------- UPSELL BLOCK 1 END--------------------*/
+#myBody .content .block {
+  position: relative;
+  padding: 80px 0;
+}
+.ass .wbckg_a:hover {
+  text-decoration: none;
+}
+/*********************************************/
+.footAff #footer .aff,
+.footHome #footer .home,
+.footCook #footer .cook,
+.footCont #footer .cont,
+.footTerms #footer .terms,
+.footPriv #footer .priv,
+.footDisc #footer .disc,
+.footNoti #footer .noti {
+  display: none;
+}
+.footNoti #footer .aff {
+  border-right: none;
+}
+
+
+/*------  APPROVED  --------*/
+.footDisc #footer.approved .cook,
+#footer.approved .aff,
+#footer.approved .disc {
+  border-right: none;
+}
+.footHome #footer.approved .disc {
+  border-right: 1px solid #ffffff;
+}
+#footer.approved .noti {
+  display: none;
+}
+/*--------------*/
+#footer .footer_inner .aff {
+  display: none;
+}
+.footHome #footer .aff,
+.footOrder #footer .aff {
+  display: inline-block;
+}
+@media (max-width: 1200px) {
+  body #footer ul li.priv {
+    border-right: none;
+  }
+}
+/* .footHome .aff,
+.footOrder .aff {
+  display: inline-block;
+} */
+/* .footCook .disc,
+.footCont .disc,
+.footTerms .disc,
+.footPriv .disc,
+.footDisc .cook,
+.footMemes .disc,
+.footAff .disc,
+.footAffm .disc,
+li.aff {
+  border-right: none!important;
+} */
+
+/*********************************************/
+body .w900 {
+  font-weight: 900;
+}
+/*********************************************/
+
+/* ========================================================== */
+/* 			               02. COLORS START                   */
+/* ========================================================== */
+.backgroundMainColor,
+.developed_sec .block,
+div#fpdesign .fpdesign_inner p a.order,
+#investment-protect .money-back h4,
+#losing-mistake-1 .table-item,
+.circle_block > ul li .circle,
+.small_circle_block .small_circle {
+	background: #171717;
+}
+.developed_sec .block h3 {
+	background: #330033;
+  color: #fff;
+}
+body .losing-mistake .title_info h2 strong,
+body #live-chart .title_info h2 strong,
+body #live-chart .title_info h2,
+.memconImg,
+#member-a h1 strong,
+.quick-introduction h1 strong,
+.quick-introduction h3 strong,
+#myBody .content .mainColor,
+.mainColor,
+#member-a h3 strong,
+div#fpdesign .fpdesign_inner p,
+.strategy h3 strong,
+#developed-2 h2 strong,
+#developed-2 h2 b,
+#myBody .content .title_info h2,
+#myBody .content .title_info h2 strong,
+.whats-new_desc .inner p b,
+.whats-new_desc .inner p strong,
+.screenshotsBlock h2 b,
+.ass #protect-account p strong,
+#whats-new h2 {
+	color: #171717;
+}
+/* #myBody .content .darkBlock .title_info span {
+	color: #59346f;
+} */
+.faq-container {
+	border-color: #171717;
+}
+#borderoff {
+  padding: 12px 18px 16px;
+  border-style: dashed;
+  border-width: 6px;
+}
+
+#myBody .content .darkBlock .title_info h2,
+#myBody .content .darkBlock .title_info h2 strong {
+	color: white;
+}
+
+#myBody .losing-mistake .title_info h2,
+#myBody, #myBody p {
+  color: #141414;
+}
+.darkBlock h1, .darkBlock h2, .darkBlock h3,
+.darkBlock h4, .darkBlock h5, .darkBlock h6,
+.darkBlock, .darkBlock p, .darkBlock div,
+#myBody .darkBlock, #myBody .darkBlock p {
+  color: white;
+}
+
+div#fpdesign .fpdesign_inner p a.order:hover {
+	box-shadow: inset 0 67px 0px #fdd500;
+}
+div#fpdesign .fpdesign_inner p.white {
+	background: #fdd500;
+}
+
+.mycontainertext p strong,
+#footer ul li a:hover {
+	color: #fdd500;
+}
+#af-form-521028303 .buttonContainer input.submit,
+#af-form-599652063 .buttonContainer input.submit,
+#af-form-1749333229 .buttonContainer input.submit,
+#af-form-357508757 .buttonContainer input.submit,
+#af-form-1944348798 .buttonContainer input.submit {
+	background: linear-gradient(to bottom, #bb00bb 0%,#171717 100%);
+  border: 1px solid #171717;
+}
+span.lastfinal {
+	color: #9d0000;
+}
+/* .block b { */
+.content bbD {
+  font-weight: 700;
+  color: #171717;
+}
+.content bbL {
+  font-weight: 700;
+	font-size: 18px;
+  color: #fdd500;
+}
+.darkBlock .lightStrong {
+  color: #fdd500;
+  font-weight: 900;
+}
+div#fpdesign .fpdesign_inner p.white {
+  color: #171717;
+}
+body p .strong {
+  color: #353535;
+  font-weight: 900;
+}
+/* ========================================================== */
+/* 			               02. COLORS END                         */
+/* ========================================================== */
+
+/* ========================================================== */
+/* 			               03. BACKGOUND START                    */
+/* ========================================================== */
+/*------------new boosted images------------------*/
+body header.blockHeader,
+body div#footer,
+body .header2020,
+body #header .home-banner {
+  background: url(../../images2/back1.jpg)no-repeat top center;
+  background-size: cover;
+}
+
+body.ass .green,
+body .support_sec,
+body #rich-forex-1353445,
+body #rich-forex-2 {
+  background: url(../../images2/back3.jpg)no-repeat top center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+body .top-features {
+  background: url(../../images2/back4.jpg)no-repeat top center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+body .secret-sauce {
+  background: url(../../images2/back2.jpg)no-repeat top center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+body.ass .rich-forex {
+  background: url(../../images2/back5.jpg)no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+body.ass .testing-years {
+  background: url(../../images2/backLight2.jpg)no-repeat top center;
+  background-size: cover;
+}
+
+body.ass .testing-years-2 {
+  background: #f1f2f2;
+}
+
+body.ass div#fpdesign {
+  background: url(../../images2/backLight3.jpg)no-repeat top center;
+  background-size: cover;
+}
+
+body.ass .strategy {
+  background: url(../../images2/backLight4.jpg)no-repeat top center;
+  background-size: cover;
+}
+
+body.ass #protect-account {
+  background: url(../../images2/backLight5.jpg)no-repeat top center;
+  background-size: cover;
+}
+
+body.ass .quick-introduction {
+  background: url(../../images2/backLight6.jpg)no-repeat top center;
+  background-size: cover;
+}
+
+body.ass .losing-mistake {
+  background: url(../../images2/backLight8.jpg)no-repeat top center;
+  background-size: cover;
+}
+/* body .secret-sauce,
+body.ass .green {
+  background: url(../../newImages/compressed/bgr3.jpg) no-repeat center top;
+  background-size: cover;
+}
+body.ass #protect-account {
+  background: url(../../newImages/compressed/bgr4.jpg) no-repeat center top;
+  background-size: cover;
+  background-attachment: fixed;
+}
+body .support_sec,
+body #rich-forex-2,
+body.ass #rich-forex-1 {
+  background: url(../../newImages/compressed/bgr5.jpg)no-repeat top center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+body #packed-trades,
+body.ass .quick-introduction {
+  background: url(../../newImages/compressed/bgr6.jpg)no-repeat top center;
+  background-size: cover;
+}
+body .top-features {
+  background: url(../../newImages/compressed/bgr7.jpg) no-repeat center top;
+  background-size: cover;
+}
+body .developed,
+body.ass .losing-mistake {
+  background: url(../../newImages/compressed/bgr8.jpg)no-repeat top center;
+  background-size: cover;
+}
+body .rich-forex {
+  background: url(../../newImages/compressed/bgr9.jpg)no-repeat top center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+body.ass .strategy {
+  background: url(../../newImages/compressed/bgr10_2.jpg)no-repeat top center;
+  background-size: cover;
+}
+body #trading-tool-2 {
+  background: url(../../newImages/compressed/bg10-edit.jpg)no-repeat top center;
+  background-size: cover;
+} */
+
+/* ========================================================== */
+/* 			               03. BACKGOUND END                      */
+/* ========================================================== */
+/* ========================================================== */
+/* 			               04. MEMA START                         */
+/* ========================================================== */
+body.mema h1.title {
+  font-weight: 900;
+  font-size: 56px;
+}
+body.mema .subtitle1 {
+  font-size: 28px;
+}
+body.mema h2.title2 {
+  font-weight: 900;
+  font-size: 35px;
+}
+body.mema h2.title3 {
+  font-weight: 900;
+  font-size: 42px;
+}
+.brokerChoiseLink {
+  font-size: 22px;
+  display: block;
+  font-weight: 900;
+  text-decoration: underline;
+  /* color: #171717; */
+  margin-top: 20px;
+}
+.brokerChoiseLink:hover {
+  /* color: #171717; */
+  text-decoration: none;
+}
+.downloadLink {
+  /* font-size: 11px; */
+  font-size: 29px;
+  display: block;
+  font-weight: 900;
+  text-decoration: underline;
+}
+.downloadLink:hover {
+  /* color: #171717; */
+  text-decoration: none;
+}
+@media (max-width: 1199px) {
+  #member-a #box_block .enum {
+    width: 70%;
+    margin-left: 100px;
+  }
+}
+@media (max-width: 991px) {
+  #member-a #box_block .enum {
+    width: 70%;
+    margin-left: 140px;
+  }
+}
+@media (max-width: 767px) {
+  #member-a a {
+    font-size: 18px;
+  }
+  #member-a figure img,
+  #member-a img {
+		max-width: 85%;
+	}
+  #member-a #box_block .enum {
+    width: 60%;
+    margin: auto;
+  }
+  #member-a #box_block .enum p {
+    width: 150%;
+  }
+  body.mema h1.title {
+    font-size: 32px;
+  }
+  body.mema .subtitle1 {
+    font-size: 22px;
+  }
+  .mema #member-a .guideText {
+    font-size: 14px;
+  }
+}
+@media (max-width: 600px) {
+  #member-a #box_block .enum {
+    width: 90%;
+  }
+}
+@media (max-width: 532px) {
+  #member-a #box_block p,
+  #member-a #box_block p strong {
+    font-size: 15px;
+  }
+}
+@media (max-width: 500px) {
+  #member-a a.brokerChoiseLink {
+    font-size: 15px;
+  }
+  body.mema h1.title {
+    font-size: 32px;
+  }
+  body.mema h2.title2,
+  body.mema h2.title3 {
+    font-size: 26px;
+  }
+}
+@media (max-width: 450px) {
+  #member-a #box_block .enum,
+  #member-a #box_block .enum p {
+    width: 100%;
+  }
+  body #member-a .text-left {
+    padding: 0px 15px !important;
+  }
+}
+@media (max-width: 380px) {
+  #member-a a.brokerChoiseLink {
+    font-size: 11px;
+  }
+  body.mema h1.title {
+    font-size: 32px;
+  }
+  body.mema h2.title2,
+  body.mema h2.title3 {
+    font-size: 26px;
+  }
+}
+/* ========================================================== */
+/* 			               04. MEMA END                           */
+/* ========================================================== */
+
+@media (max-width: 532px) {
+  .bottomImages img,
+  #member-a .bottomImages img {
+    max-width: 48%;
+    margin: auto;
+  }
+}
+.visible-xxs {
+  display: none !important;
+}
+@media (max-width: 543px) {
+  .visible-xxs {
+    display: block !important;
+  }
+}
+
+.today-price p.price {
+  line-height: 43px;
+}
+
+.ass .blockHeader .lastfinal {
+  color: #f6dc18;
+  font-size: 23px;
+  margin-bottom: 5px;
+}
+.orderBtn .text .green2 {
+  color: #1b7046;
+}
+.myBorder {
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  background: #bbb;
+  left: 0;
+}
+.myBorderMargin {
+  margin-bottom: 105px;
+}

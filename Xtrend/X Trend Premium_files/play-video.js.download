@@ -1,0 +1,34 @@
+$(document).ready(function () {
+  var videocontainer1 = '#video1';
+
+  $(videocontainer1).on('play', function() {
+      $(".playpause").hide();
+  });
+
+  $('.video').parent().click(function () {
+      if($(this).children(".video").get(0).paused){
+          $(this).children(".video").get(0).play();
+          $(this).children(".playpause").fadeOut();
+      }else{
+          $(this).children(".video").get(0).pause();
+          $(this).children(".playpause").fadeIn();
+      }
+  });
+});
+$(document).ready(function () {
+  var videocontainer2 = '#video2';
+
+  $(videocontainer2).on('play', function() {
+      $(".playpause2").hide();
+  });
+
+  $('.video2').parent().click(function () {
+      if($(this).children(".video2").get(0).paused){
+          $(this).children(".video2").get(0).play();
+          $(this).children(".playpause2").fadeOut();
+      }else{
+          $(this).children(".video2").get(0).pause();
+          $(this).children(".playpause2").fadeIn();
+      }
+  });
+});

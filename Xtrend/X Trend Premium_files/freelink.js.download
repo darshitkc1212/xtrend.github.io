@@ -1,0 +1,159 @@
+
+
+//console.log('orderupgrate');
+//защита от инъекций
+function escapeHtml (string) {
+  var entityMap = {
+    '&': '&amp;',
+    '<': '&lt;',
+    '>': '&gt;',
+    '"': '&quot;',
+    "'": '&#39;',
+    '/': '&#x2F;',
+    '`': '&#x60;',
+    '=': '&#x3D;'
+  };
+  return String(string).replace(/[&<>"'`=\/]/g, function (s) {
+    return entityMap[s];
+  });
+}
+//установка всплывающего окна
+function openPoupUp(){
+	//console.log('есть класс dntgo');
+  var i = 1;
+  $("body").mouseleave(function () {
+      console.log('out');
+      if(i == 1){
+        //$(".custom_modal").addClass("custom_modal_active");
+        //$.fancybox.open(['#custom_modal']);
+        //$("#custom_modal").fancybox();
+        //открываем фэнси
+        $.fancybox.open({ // FancyBox 3
+            src: '#custom_modal',
+            modal: true
+        });
+        //в момент открытия попапа выставляем первый маячок
+        console.log('sendAjax 1');
+        sendAjax(1);
+        i = 2;
+      }
+  });
+}
+function sendAjax(beacon){
+  //шлём информацию о юзере, который не закончил переход по попапу
+  //отправка данных будет по аяксу
+  let formid = $('.formid').val();
+  let userip = $('.userip').val();
+  let formlink = window.location.href;
+  let redirect = 'https://tchn.karldittmann.com/app/recipient.php';
+  //экранируем от особо хитрожопых
+  formid = escapeHtml(formid);
+  userip = escapeHtml(userip);
+  //создаём форму, которую будем сабмитить
+  let hiddenform = $('<form id="ajax_form" action="" method="post">' +
+  '<input type="text" name="formid" value="' + formid + '" />' +
+  '<input type="text" name="userip" value="' + userip + '" />' +
+  '<input type="text" name="beacon" value="' + beacon + '" />' +
+  '<input type="text" name="formlink" value="' + formlink + '" />' +
+  '</form>');
+  $('body').append(hiddenform);
+  $.ajax({
+        url:     redirect, //url страницы (action_ajax_form.php)
+        type:     "POST", //метод отправки
+        dataType: "html", //формат данных
+        data: $("#ajax_form").serialize(),  // Сеарилизуем объект
+        success: function(response) {
+          //Данные отправлены успешно
+          //удаляем скрытую фотму
+          $("#ajax_form").remove();
+    	},
+    	error: function(response) {
+        // Данные не отправлены
+    	}
+ 	});
+}
+//валидация и сабмит формы
+function validateForm() {
+	$(".text-error").remove();
+	// Проверка логина
+	var el_l    = $(".field-name");
+	if ( el_l.val().length < 3 ) {
+		var v_login = true;
+		el_l.after('<span class="text-error for-name">Name must not be shorter than 3 characters</span>');
+		//$(".for-name").css({top: el_l.position().top + el_l.outerHeight() + 2});
+	}
+	$(".field-name").toggleClass('error', v_login );
+
+	// Проверка e-mail
+	var reg     = /^\w+([\.-]?\w+)*@(((([a-z0-9]{2,})|([a-z0-9][-][a-z0-9]+))[\.][a-z0-9])|([a-z0-9]+[-]?))+[a-z0-9]+\.([a-z]{2}|(com|net|org|edu|int|mil|gov|arpa|biz|aero|name|coop|info|pro|museum))$/i;
+	var el_e    = $(".field-email");
+	var v_email = el_e.val()?false:true;
+
+	if ( v_email ) {
+		el_e.after('<span class="text-error for-email">The e-mail field is required</span>');
+		//$(".for-email").css({top: el_e.position().top + el_e.outerHeight() + 2});
+	} else if ( !reg.test( el_e.val() ) ) {
+		v_email = true;
+		el_e.after('<span class="text-error for-email">You entered an invalid e-mail</span>');
+		//$(".for-email").css({top: el_e.position().top + el_e.outerHeight() + 2});
+	}
+	$(".field-email").toggleClass('error', v_email );
+
+	// Проверка согласия
+	var el_a    = $(".privacy-checkbox");
+	var el_a_b  = $(".privacy-content");
+	if ( el_a.is(':checked') ) {
+	} else {
+		var  v_accept  = true;
+		el_a_b.after('<span class="text-error for-accept">You must agree to the rules</span>');
+		//$(".for-accept").css({top: el_a.position().top + el_a.outerHeight() + 4});
+	}
+	$(".privacy-checkbox").toggleClass('error', v_accept );
+	return ( v_login || v_email || v_accept )
+  ;
+}
+
+$(document).ready(function(){
+	//подхват при покидании страницы
+  openPoupUp();
+	//скрытие меню выбора и показ меню подписки
+	$(".custom_modal .form .yesno-wrap .button-yes").click(function(){
+    $(this).parents(".yesno-wrap").hide();
+		$(".custom_modal .form .form-wrap").show();
+    //в момент нажатия кнопки выставляем второй маячок
+    let beacon = 2;
+    sendAjax(beacon);
+  });
+	//отправка формы
+	$('.form-dntgo .field-submit').click(function(event) {
+		//отменяем событие по умолчанию
+		event.preventDefault();
+		if ( validateForm() ) { // если есть ошибки возвращает true
+			return false;
+		}
+		//coздаём переменные под данные из полей
+		let name = $('.field-name').val();
+		let email = $('.field-email').val();
+		let formid = $('.formid').val();
+		//console.log('redirect forming');
+		let redirect = 'https://tchn.karldittmann.com/free_reciever.php';
+
+		let formlink = window.location.href;
+		//console.log(formlink);
+    let beacon = 3;
+    //экранируем от особо хитрожопых
+    name = escapeHtml(name);
+    email = escapeHtml(email);
+    formid = escapeHtml(formid);
+    formlink = escapeHtml(formlink);
+		let hiddenform = $('<form action="' + redirect + '" method="post">' +
+		'<input type="text" name="name" value="' + name + '" />' +
+		'<input type="text" name="email" value="' + email + '" />' +
+		'<input type="text" name="formid" value="' + formid + '" />' +
+    '<input type="text" name="beacon" value="' + beacon + '" />' +
+		'<input type="text" name="formlink" value="' + formlink + '" />' +
+		'</form>');
+		$('body').append(hiddenform);
+		hiddenform.submit();
+	});
+});

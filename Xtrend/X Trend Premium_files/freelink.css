@@ -1,0 +1,227 @@
+.clear{
+  clear: both;
+}
+.custom_modal{
+  width: 770px;
+  background-color: transparent!important;
+}
+.custom_modal .modal_form .closeLPModal {
+  position: absolute;
+  right: -14px;
+  top: -14px;
+  cursor: pointer;
+  outline: none;
+  display: block;
+  background: #000;
+  width: 24px;
+  height: 23px;
+  color: #ffffff;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 24px;
+  line-height: 24px;
+  line-height: 0px;
+  padding: 7px 0 0;
+  text-decoration: none;
+  border: 3px solid #fff;
+}
+@media (max-width: 800px){
+  .custom_modal{
+    width: 90%;
+  }
+}
+.custom_modal .modal_form{
+  width: 700px;
+  background: #ffffff;
+  position: relative;
+  /*height: 100%;*/
+  transition: opacity .5s ease-in-out;
+  -webkit-transition: opacity .5s ease-in-out;
+  -moz-transition: opacity .5s ease-in-out;
+  -o-transition: opacity .5s ease-in-out;
+  opacity: 1;
+}
+.custom_modal .modal_form .optin-bar {
+  padding-bottom: 20px;
+}
+.custom_modal .modal_form .optin-bar > span{
+  float: left;
+  width: 25%;
+  height: 11px;
+  display: block;
+}
+.custom_modal .modal_form .red-bar {
+  background-color: #ef3e36;
+}
+.custom_modal .modal_form .green-bar {
+  background-color: #abb92e;
+}
+.custom_modal .modal_form .orange-bar {
+  background-color: #f57826;
+}
+.custom_modal .modal_form .blue-bar {
+  background-color: #17b4e9;
+}
+.custom_modal .modal_form .header {
+  min-height: 30px;
+  padding: 15px;
+  width: 100%;
+}
+.custom_modal .modal_form .title{
+  font-size: 32px;
+  font-weight: 700;
+  color: #484848;
+  width: 100%;
+  margin-bottom: 15px;
+  text-shadow: 0 1px #fff;
+  text-align: center;
+}
+.custom_modal .modal_form .tagline{
+  font-size: 24px;
+  line-height: 1.25;
+  color: #484848;
+  width: 100%;
+  margin-bottom: 30px;
+  text-shadow: 0 1px #fff;
+  text-align: center;
+}
+.custom_modal .modal_form .content{
+  padding: 15px;
+  text-align: right;
+}
+.custom_modal .modal_form .left .image img{
+  height: auto;
+  max-width: 100%;
+  display: block;
+}
+.custom_modal .modal_form .left{
+  min-width: 200px;
+  width: 45%;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 0;
+  line-height: 0;
+  margin: 0;
+  padding: 0;
+}
+.custom_modal .modal_form .left .image{
+  display: inline-block;
+  width: 80%;
+}
+.custom_modal .modal_form .right {
+  display: inline-block;
+  min-width: 200px;
+  width: 50%;
+  background-color: #dadada;
+  padding: 3%;
+  position: relative;
+  vertical-align: middle;
+  font-size: 0;
+  line-height: 0;
+  margin: 0 -15px 0 0;
+}
+.custom_modal .modal_form .arrow {
+  position: absolute;
+  width: 49px;
+  height: 56px;
+  left: -40px;
+  top: -40px;
+}
+.custom_modal .modal_form .form-dntgo button,
+.custom_modal .modal_form .form-dntgo .button{
+  display: block;
+  background: #484848;
+  border: 1px solid #484848;
+  width: 100%;
+  color: #fff;
+  font-family: "arial", sans-serif;
+  font-size: 20px;
+  padding: 0;
+  line-height: 28px;
+  text-align: center;
+  text-decoration: none;
+  vertical-align: middle;
+  cursor: pointer;
+  margin: 0;
+  height: 36px;
+  font-style: normal;
+  transition-property: background-color, border-color, color;
+  transition-duration: 2s;
+}
+.custom_modal .modal_form .form-dntgo a.button{
+  line-height: 48px;
+}
+.custom_modal .modal_form .form-dntgo button:hover,
+.custom_modal .modal_form .form-dntgo .button:hover{
+  background: #17b4e9;
+  border: 1px solid #17b4e9;
+  color: #000;
+  text-decoration: none;
+}
+.custom_modal .modal_form .form-dntgo .privacy-content {
+  color: #888;
+  font-size: 12px;
+  font-family: 'Open Sans',sans-serif;
+  text-align: left;
+  margin-bottom: 10px;
+  line-height: 1;
+}
+.custom_modal .modal_form .form-dntgo .privacy-checkbox{
+  width: auto!important;
+  padding: 0;
+  margin: 0;
+  height: auto!important;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  display: inline;
+}
+.custom_modal .modal_form .form-dntgo .privacy-inner-content {
+  display: inline;
+  vertical-align: bottom;
+}
+.modal_form .form-dntgo input[type=submit],
+.custom_modal .form-dntgo button,
+.custom_modal .form-dntgo .button{
+  height: 54px;
+  width: 100%;
+}
+.custom_modal .modal_form .form-dntgo input,
+.custom_modal .modal_form .form-dntgo select,
+.custom_modal .modal_form .form-dntgo textarea,
+.custom_modal .modal_form .form-dntgo button,
+.custom_modal .modal_form .form-dntgo .button{
+  margin: 0 0 15px;
+  height: 46px;
+  line-height: 21px;
+  font-size: 21px;
+}
+.custom_modal .modal_form .form-dntgo .button-no{
+  margin-bottom: 0;
+  color: #ffffff;
+  background: #666666;
+  border-color: #666666;
+}
+.custom_modal .modal_form .form-dntgo .button-yes{
+  color: #ffffff;
+  background: #83c11f;
+  border-color: #83c11f;
+  font-weight: bold;
+}
+.custom_modal .modal_form .form-dntgo .field-submit{
+  color:#ffffff;
+  background:rgba(131,193,31,1);
+  border-color:#83c11f;
+}
+.custom_modal .modal_form .form-dntgo .text-error{
+  text-align: left;
+  width: 100%;
+  color: #ef3e36;
+  display: block;
+  font-size: 13px;
+  line-height: 13px;
+  margin: 0 0 10px;
+  padding: 0;
+}
